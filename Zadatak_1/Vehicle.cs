@@ -8,14 +8,16 @@ namespace Zadatak_1
 {
     class Vehicle
     {
+        public int Id { get; set; }
         public string Direction { get; set; }
 
         public Vehicle()
         {
         }
 
-        public Vehicle(string direction)
+        public Vehicle(int id, string direction)
         {
+            Id = id;
             Direction = direction;
         }
     }
